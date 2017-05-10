@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImageCompressTool"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="525" ResizeMode="NoResize" >
+        Title="图片压缩" Height="200" Width="525" ResizeMode="NoResize" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70" />
@@ -21,7 +21,7 @@
             <TextBox Name="filepath" Grid.Column="0" Margin="6" FontSize="20" IsReadOnly="True" TextWrapping="Wrap" />
             <Button Name="ChooseFile"  Grid.Column="1" Content="选择文件" Width="60" Margin="5" Click="ChooseFile_Click" />
         </Grid>
-        <TextBox Name="compresslevel" ToolTip="压缩率" Grid.Row="2" HorizontalAlignment="Right" Width="100" Height="30" Margin="0 0 75 0" FontSize="20" PreviewKeyDown="Compresslevel_PreviewKeyDown" />
+        <TextBox Name="compresslevel" ToolTip="图片质量" Grid.Row="2" HorizontalAlignment="Right" Width="100" Height="30" Margin="0 0 75 0" FontSize="20" PreviewKeyDown="Compresslevel_PreviewKeyDown" />
         <Button Name="Compress" Content="一键压缩" Height="30" Width="60" Grid.Row="2" HorizontalAlignment="Right" Margin="0 0 5 0" Click="Compress_Click" />
         <ProgressBar Name="compressPro" HorizontalAlignment="Left" Height="20" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="200" Visibility="Hidden"  />
     </Grid>
